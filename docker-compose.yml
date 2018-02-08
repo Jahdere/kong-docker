@@ -1,0 +1,10 @@
+---
+version: '2'
+services:
+    kong:
+        container_name: kong
+        build: .
+        security_opt:
+            - seccomp:unconfined
+        tty: true
+
